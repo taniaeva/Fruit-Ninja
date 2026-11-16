@@ -1,34 +1,83 @@
-🍉 Fruit Ninja - Pygame Edition
-A polished, object-oriented 2D arcade slice-em-up game built in Python using the Pygame library. Test your reflexes by slicing juicy procedural fruits while dodging dangerous metallic bombs in a classic Dojo setting!
-✨ Features
-Procedural Fruit Rendering: Dynamically drawn fruits (Watermelon, Orange, Apple, and Banana) complete with textures, stems, leaves, and realistic sliced halves.
-Arc Physics Engine: Fruits and bombs are launched from the bottom of the screen with randomized parabolic arcs, gravity acceleration, and rotation speeds.
-Fluid Blade Mechanics: Smooth, glowing mouse trail effect that fades over time to simulate a slicing blade.
-Juice & Spark Particles: Slicing fruits triggers colorful juice splashes, while active bombs feature glowing, crackling fuses.
-Hazard System: Procedurally spawned bombs that trigger an instant Game Over if sliced.
-Arcade Life & Score Tracker: Keep track of your score and 3 lives (losing a life when an unsliced fruit falls off-screen).
-Multiple Game States: Clean transitions between Start Menu, Active Gameplay, and Game Over screens.
-🛠️ Prerequisites & Installation
-Make sure you have Python installed on your system (Python 3.7+ recommended).
-Install Pygame:
-Open your terminal or command prompt and run:
-Bash
+
+# 🍉 Fruit Ninja Clone - Pygame Edition
+
+A fully functional, arcade-style **Fruit Ninja** clone built from scratch using **Python** and the **Pygame** library. Slice flying fruits, trigger juicy particle splashes, dodge explosive bombs, and test your ninja reflexes!
+
+
+## ✨ Features
+
+- **Procedural Fruit Rendering:** Dynamically drawn fruits (Watermelon, Orange, Apple, and Banana) complete with rotation, texturing, and realistic split-half physics.
+- **Arc Physics & Gravity:** Fruits and bombs follow authentic parabolic trajectories with adjustable gravity.
+- **Glowing Blade Trail:** Fluid, fading mouse trail that simulates a razor-sharp ninja blade.
+- **Juice Splashes & Particles:** Dynamic splash effects matching the color of the sliced fruit.
+- **Bomb Hazards:** Dangerous metallic bombs with blinking fuses that trigger an instant Game Over if sliced.
+- **Lives & Score System:** Lose a life if an unsliced fruit falls off-screen, with a 3-life limit before game over.
+- **Dojo Aesthetic:** Custom wooden-themed dojo UI background and overlays.
+
+
+
+## 🛠️ Prerequisites
+
+Make sure you have **Python 3.x** installed on your system. You will also need the **Pygame** library.
+
+
+
+## 🚀 Installation & Running
+
+1. **Clone or Download** this repository to your local machine:
+   ```bash
+   git clone [https://github.com/your-username/fruit-ninja-pygame.git](https://github.com/your-username/fruit-ninja-pygame.git)
+   cd fruit-ninja-pygame
+
+
+
+2. **Install Pygame** using pip:
+```bash
 pip install pygame
-Run the Game:
-Save the Python script as fruit_ninja.py and run it:
-Bash
-python fruit_ninja.py
-🎮 Controls
-Action	Control
-Start / Restart Game	Spacebar or Left Mouse Click
-Slice Fruits / Bombs	Hold and drag the Left Mouse Button
-Return to Menu	ESC key (during gameplay or game over)
-Restart from Game Over	R key
-🏗️ Code Architecture
-The game is structured using clean, object-oriented programming principles:
-Particle: Handles juice splashes and explosion sparks with gravity and fading alpha transparency.
-Fruit: Handles whole fruit rendering, rotation physics, slice detection, and split-half animation.
-Bomb: Manages metallic bomb rendering, fuse spark animations, and collision hitboxes.
-Game: Controls the main state machine (START, PLAYING, GAMEOVER), event loops, score/lives tracking, and rendering pipelines.
-📝 License
-This project is open-source and free to use for educational and personal projects.
+
+
+
+3. **Run the Game:**
+```bash
+python main.py
+
+
+
+
+
+## 🎮 Controls
+
+| Action | Control |
+| --- | --- |
+| **Slice Fruits / Interact** | Move Mouse (Hover / Swipe across fruits) |
+| **Start Game** | `SPACE` key or Click on Start Screen |
+| **Restart (on Game Over)** | `R` key |
+| **Return to Menu** | `ESC` key |
+
+
+
+## 🏗️ Code Architecture
+
+The game is structured using clean, object-oriented principles with Pygame:
+
+* `Particle`: Manages juice splash droplets and spark physics/alpha fading.
+* `Fruit`: Handles arc velocity, rotation, whole fruit drawing, and split-half animation upon slicing.
+* `Bomb`: Simulates metallic explosive hazards with ticking fuse animation and collision detection.
+* `Game`: Manages game states (`START`, `PLAYING`, `GAMEOVER`), score tracking, life penalties, and main event/render loops.
+
+
+
+## 💡 Future Improvements (Planned)
+
+* [ ] Add sound effects for slicing, splashes, and bomb detonations.
+* [ ] Implement combo slicing bonuses (extra points for slicing 3+ fruits at once).
+* [ ] Add high score tracking saved locally.
+* [ ] Support click-and-hold swipe detection.
+
+
+
+## 📜 License
+
+This project is open-source and available under the [MIT License](https://www.google.com/search?q=LICENSE).
+
+
